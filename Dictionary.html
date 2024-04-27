@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사전</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        input, button {
+            padding: 5px 10px;
+        }
+
+        #list {
+            border: 1px solid #ccc;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #list > li {
+            flex-basis: 48%;
+            margin-top: 20px;
+        }
+
+        #list > li > img {
+            width: 80%;
+        }
+
+        p {
+            font-size: 20pt;
+        }
+
+        h1 {
+            font-size: 45pt;
+            color: rgb(90, 90, 192);
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>사전</h1>
+        <form id="search-form">
+            <input type="text" id="search">
+            <button id="searchBtn">검색</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <ul id="list">
+            
+        </ul>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
